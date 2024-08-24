@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SrcCode.LoginScene">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../data/ProjectLogo.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="432.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="113.0" layoutY="109.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="password" layoutX="113.0" layoutY="173.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="Loginbutton" layoutX="72.0" layoutY="297.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #0598ff;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="wrongLogIn" layoutX="147.0" layoutY="136.0" prefHeight="21.0" prefWidth="178.0" textFill="RED" />
+            <Label layoutX="23.0" layoutY="374.0" prefHeight="25.0" prefWidth="329.0" text="طب لما نقول الجاكيت البامب الكل يقول استر يارب" textFill="#0598ff">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button fx:id="Registerbutton" layoutX="221.0" layoutY="297.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #0598ff;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="27.0" layoutY="24.0" text="Welcome to EL-JACKET EL-PUMP" textFill="#0598ff">
+               <font>
+                  <Font name="Forte" size="22.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Admin" layoutX="63.0" layoutY="238.0" mnemonicParsing="false" text="Admin" textFill="#0598ff" toggleGroup="$UserType">
+               <font>
+                  <Font name="Forte" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="UserType" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Customer" layoutX="206.0" layoutY="238.0" mnemonicParsing="false" text="Customer" textFill="#0598ff" toggleGroup="$UserType">
+               <font>
+                  <Font name="Forte" size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

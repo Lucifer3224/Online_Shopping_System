@@ -1,0 +1,7 @@
+Order Number: 0
+Order Date: Sun May 12 13:30:04 EEST 2024
+Items:
+redDress x 1 - 1556.0 LE
+Total Price: 1556.0 LE
+Discount: 0.0 LE
+Total Price After Discount: 1556.0 LE
